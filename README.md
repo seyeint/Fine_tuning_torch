@@ -1,6 +1,6 @@
-# Fine tuning with torch
+# Fine tuning with new torch native framework.
 
-### Quick context on LoRA, regardless of the framework one is working in:
+#### Quick context on LoRA, regardless of the framework one is working in:
 
 **Rank (R)**: Measure of "dimensionality" of the space a transformation - weight matrix - can span. 
 
