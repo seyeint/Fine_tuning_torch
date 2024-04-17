@@ -1,6 +1,6 @@
 # Fine tuning with torch
 
-## Quick context on LoRA, regardless of the framework one is working in:
+### Quick context on LoRA, regardless of the framework one is working in:
 
 **Rank (R)**: Measure of "dimensionality" of the space a transformation - weight matrix - can span. The max rank is always the min(#rows, #columns)... why? because that's the max rank possible when assuming all rows and columns are linearly independent.
 Higher rank means more parameters to learn, more memory, more energy spent on concept/semantic space.
