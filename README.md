@@ -8,14 +8,16 @@ The max rank is always the min(#rows, #columns)... why? because that's the max r
 
 Higher rank means more parameters to learn, more memory, more energy spent on concept/semantic space.
 ___
-**Low (Lo)**: One wants to approximate a subset of these weight matrices (x layers) with lower rank matrices (check SVD or other factorization methods). 
+**Low (Lo)**: One wants to approximate a subset of these weight matrices (x layers) with lower rank matrices (check SVD or other factorization methods). [A]
 
-The rest of the network has its weights frozen during the backward pass.
+After that, typically a simple linear projection gets us back to the correct dimension that must match the next input dimension. [B]
+
+The rest of the network has its weights frozen during the forward and backward pass. 
 ___
 **Adaptation (A)**: One adapts the pre-trained model to a more specific task/objective, capturing important relationships from this new environment, comparatively to the innitial general model training.
 ___
 **LoRA**: One fine-tunes a large network not simply by freezing some weights and re-training on specific data, but actually reducing the computational cost by performing and working with low rank approximation matrices.
 
-After fine-tuning, one cool thing is that our model is due to having less parameters, given that we don't go back to the original layer dimensions - less memory, faster inference, less energy spent.
+After fine-tuning, one cool thing is that our model is due to having less parameters (in_dim * out_dim -> r * (in_dim+out_dim)), given that we don't go back to the original layer dimensions - less memory, faster inference, less energy spent.
 
 ![image](https://github.com/seyeint/Fine_tuning_torch/assets/36778187/a0430c2e-aa0b-4754-909e-3d8ad37b2349)
