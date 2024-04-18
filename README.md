@@ -16,7 +16,6 @@ The rest of the network has its weights frozen during the forward and backward p
 ___
 **Adaptation (A)**: One adapts the pre-trained model to a more specific task/objective, capturing important relationships from this new environment, comparatively to the innitial general model training.
 ___
-**LoRA**: One fine-tunes a large network not simply by freezing some weights and re-training on specific data, but actually reducing the computational cost by performing and working with low rank approximation matrices.
- ($inDim \times outDim$ -> $rank \times (inDim + outDim)$)
+**LoRA**: One fine-tunes a large network not simply by freezing some weights and re-training on specific data, but actually reducing the computational cost by performing and working with low rank approximation matrices. ($inDim \times outDim$ -> $rank \times (inDim + outDim)$
 
 ![image](https://github.com/seyeint/Fine_tuning_torch/assets/36778187/a0430c2e-aa0b-4754-909e-3d8ad37b2349)
