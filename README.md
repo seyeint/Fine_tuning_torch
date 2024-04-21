@@ -19,3 +19,5 @@ ___
 **LoRA**: One fine-tunes a large network not simply by freezing some weights and re-training on specific data, but actually reducing the computational cost by performing and working with low rank approximation matrices. $inDim \times outDim$ -> $rank \times (inDim + outDim)$
 
 ![image](https://github.com/seyeint/Fine_tuning_torch/assets/36778187/a0430c2e-aa0b-4754-909e-3d8ad37b2349)
+
+For an intuitive overview of rank and alpha parameters, check [this](https://medium.com/@fartypantsham/what-rank-r-and-alpha-to-use-in-lora-in-llm-1b4f025fd133). 
